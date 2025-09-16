@@ -22,7 +22,7 @@ La aplicación está desarrollada en **Streamlit** y utiliza un modelo de recome
 ## Vista previa de la aplicación
 Ejemplo de cómo se ve la app funcionando:  
 
-![Vista previa de la aplicación](screenshot_app.png)
+![Vista previa de la aplicación](Screenshot_app.png)
 
 ## Uso local
 Si quieres ejecutar el proyecto en tu propio ordenador:  
