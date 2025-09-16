@@ -38,6 +38,7 @@ pip install -r requirements.txt
 # Ejecuta la app
 streamlit run app.py
 
+```
 
 ## Autora  
 Lucía Gómez Navarro
