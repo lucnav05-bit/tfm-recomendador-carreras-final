@@ -39,7 +39,7 @@ pip install -r requirements.txt
 streamlit run app.py
 
 ```
-
 ## Autora  
-Lucía Gómez Navarro
-Trabajo de fin de máster de Data Science, Big Data & Business Analytics de la Universidad Autónoma de Madrid 
+
+Lucía Gómez Navarro  
+Trabajo de fin de máster en Data Science, Big Data & Business Analytics de la Universidad Autónoma de Madrid
