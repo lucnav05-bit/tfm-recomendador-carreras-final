@@ -1,6 +1,7 @@
 # Recomendador de Carreras/Estudios (TFM)
+
 Este proyecto implementa un **sistema de recomendación de carreras y estudios** en función de intereses personales.  
-La aplicación está desarrollada en **Streamlit** y utiliza un modelo de recomendación basado en contenido (**content-based**). Este enfoque compara el perfil de cada usuario con perfiles promedio de las distintas carreras usando la **similitud coseno**, que es una métrica para medir el grado de semejanza entre vectores (en este caso, intereses).
+La aplicación está desarrollada en **Streamlit** y utiliza un modelo de recomendación basado en contenido (**content-based**), donde se calculan perfiles promedio de cada carrera y se comparan con el perfil de cada usuario usando la **similitud coseno** (una métrica para medir semejanza entre vectores).
 
 ## Objetivos del proyecto
 - Diseñar un prototipo de recomendación de estudios accesible y visual.  
@@ -10,7 +11,7 @@ La aplicación está desarrollada en **Streamlit** y utiliza un modelo de recome
 - Ofrecer una interfaz sencilla para uso real (demo online).  
 
 ## Demo en línea
-[Abrir la aplicación en Streamlit Cloud](https://tfm-recomendador-carreras.streamlit.app/)
+[Acceder a la aplicación en Streamlit](https://tfm-recomendador-carreras-final.streamlit.app/)
 
 ## Archivos del repositorio
 - `app.py` → código de la aplicación en Streamlit  
@@ -19,7 +20,7 @@ La aplicación está desarrollada en **Streamlit** y utiliza un modelo de recome
 - `README.md` → explicación y guía del proyecto  
 
 ## Vista previa de la aplicación
-Ejemplo de cómo se ve la app funcionando:
+Ejemplo de cómo se ve la app funcionando:  
 
 ![Vista previa de la aplicación](screenshot_app.png)
 
@@ -28,15 +29,15 @@ Si quieres ejecutar el proyecto en tu propio ordenador:
 
 ```bash
 # Clona el repositorio
-git clone https://tfm-recomendador-carreras-final.streamlit.app/
-cd tfm-recomendador-carreras
+git clone https://github.com/lucnav05-bit/tfm-recomendador-carreras-final.git
+cd tfm-recomendador-carreras-final
 
 # Instala dependencias
 pip install -r requirements.txt
 
 # Ejecuta la app
 streamlit run app.py
-```
+
 
 ## Autora  
 Lucía Gómez Navarro
