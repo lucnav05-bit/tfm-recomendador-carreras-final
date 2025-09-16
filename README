@@ -28,7 +28,7 @@ Si quieres ejecutar el proyecto en tu propio ordenador:
 
 ```bash
 # Clona el repositorio
-git clone https://github.com/lucnav05-bit/tfm-recomendador-carreras.git
+git clone https://tfm-recomendador-carreras-final.streamlit.app/
 cd tfm-recomendador-carreras
 
 # Instala dependencias
