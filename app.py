@@ -15,7 +15,7 @@ DATASET_FILE = Path("dataset_tfm_recomendacion_carreras.csv")
 FEATURES = [f"Interes_{i}" for i in range(1, 13)]
 TARGET = "Carrera_Asignada"
 
-# Nombres visibles (en el mismo orden que Interes_1..Interes_12)
+# Nombres visibles 
 INTEREST_LABELS = [
     "Matemáticas / Cálculo",
     "Física / Experimentación",
@@ -31,7 +31,7 @@ INTEREST_LABELS = [
     "Arte / Expresión",
 ]
 
-# Preguntas (3 por cada interés → 36 ítems)
+# Preguntas (3 por cada interés - 36 ítems)
 QUESTION_BANK = {
     "Interes_1": [
         "Disfruto resolviendo problemas matemáticos.",
@@ -111,7 +111,7 @@ if missing:
     st.error(f"Faltan columnas en el CSV: {', '.join(missing)}")
     st.stop()
 
-# Convertimos a numérico por si acaso y limitamos a 1..5
+# Se convierte a numérico por si acaso y limitamos a 1..5
 df[FEATURES] = df[FEATURES].apply(pd.to_numeric, errors="coerce").fillna(3).clip(1, 5)
 
 # Perfiles de carrera (modelo sencillo) 
@@ -155,7 +155,7 @@ with tab_app:
                 st.divider()
         submitted = st.form_submit_button("Calcular recomendaciones")
 
-    # Si se envía el formulario, hacemos la media (3 preguntas → 1 valor por interés)
+    # Si se envía el formulario, se hace la media (3 preguntas - 1 valor por interés)
     if submitted:
         user_vals = []
         for feat in FEATURES:
@@ -179,7 +179,7 @@ with tab_app:
         carrera = profiles.index[j]
         score = float(sims[j])
 
-        # Explicación simple: intereses que más aportan
+        # Explicación: intereses que más aportan
         contrib = user_scaled[0] * profiles.values[j]
         idx_top = np.argsort(contrib)[::-1][:3]
         feats = [INTEREST_LABELS[k] for k in idx_top]
@@ -210,7 +210,7 @@ with tab_app:
         st.bar_chart(chart_df.sort_values("Contribución"))
         st.caption(f"Factores que más suman → **{profiles.index[top1_idx]}**")
 
-    # Descargas en CSV (sencillas)
+    # Descargas en CSV 
     st.divider()
     st.subheader("Descargar resultados (CSV)")
 
