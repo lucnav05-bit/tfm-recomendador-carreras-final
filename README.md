@@ -25,7 +25,7 @@ Ejemplo de cómo se ve la app funcionando:
 ![Vista previa de la aplicación](Screenshot_app.png)
 
 ## Uso local
-Si quieres ejecutar el proyecto en tu propio ordenador:  
+Para ejecutar el proyecto en tu propio ordenador:  
 
 ```bash
 # Clona el repositorio
